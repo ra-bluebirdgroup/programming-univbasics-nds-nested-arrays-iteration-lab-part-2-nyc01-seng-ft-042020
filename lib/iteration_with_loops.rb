@@ -28,23 +28,22 @@
 def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
-  outer_results = []
-row_index = 0
+  new_array = []
+  row_index = 0
 while row_index < src.count do
   element_index = 0
-  inner_results = []
-  lowest_value = 100
+  min_value = 100
   while element_index < src[row_index].count do
-    if src[row_index][element_index] < lowest_value
-      lowest_value = src[row_index][element_index]
+    if src[row_index][element_index] < min_value
+      min_value = src[row_index][element_index]
     end
     element_index += 1
   end
-  outer_results << lowest_value
+  new_array << min_value
   row_index += 1
 end
-outer_results
+new_array
 end
-# this test is asking for a "find_greater_pair" that
-#returns "returns the larger numbers from each pair in a new Array"
-#but its testing for the min 
+#this test is asking for a "find_greater_pair" that
+#"returns the larger numbers from each pair in a new Array"
+#but it is actually testing for the min
