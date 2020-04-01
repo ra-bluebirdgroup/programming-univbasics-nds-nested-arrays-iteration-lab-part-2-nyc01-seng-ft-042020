@@ -40,7 +40,7 @@ while row_index < src.count do
     end
     element_index += 1
   end
-  new_array << lowest_value
+  new_array << min_value
   row_index += 1
 end
 new_array
