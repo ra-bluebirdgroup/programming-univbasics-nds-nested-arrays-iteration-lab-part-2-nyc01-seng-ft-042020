@@ -32,7 +32,6 @@ def find_min_in_nested_arrays(src)
   row_index = 0
 while row_index < src.count do
   element_index = 0
-  #inner_results = []
   min_value = 100
   while element_index < src[row_index].count do
     if src[row_index][element_index] < min_value
@@ -45,6 +44,6 @@ while row_index < src.count do
 end
 new_array
 end
-# this test is asking for a "find_greater_pair" that
-#returns "returns the larger numbers from each pair in a new Array"
-#but its testing for the min
+#this test is asking for a "find_greater_pair" that
+#"returns the larger numbers from each pair in a new Array"
+#but it is actually testing for the min
