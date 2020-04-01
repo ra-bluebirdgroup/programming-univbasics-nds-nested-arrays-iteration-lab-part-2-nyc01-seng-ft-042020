@@ -43,7 +43,7 @@ while row_index < src.count do
   new_array << lowest_value
   row_index += 1
 end
-outer_results
+new_array
 end
 # this test is asking for a "find_greater_pair" that
 #returns "returns the larger numbers from each pair in a new Array"
